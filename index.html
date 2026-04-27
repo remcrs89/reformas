@@ -240,9 +240,13 @@
     <div style="position:relative;padding:10px">
       <!-- EDITAR: Para poner una foto real del equipo, reemplaza este div por:
            <img src="foto-equipo.jpg" alt="Equipo Cristian Reformas" style="width:100%;border-radius:12px;display:block"> -->
-      <div class="sobre-img-box">
-        📷 Añade aquí una foto del equipo
-        <div class="exp-badge">+10<small>AÑOS</small></div>
+      <div class="sobre-img-box" style="padding:0;overflow:hidden;position:relative">
+        <video autoplay muted loop playsinline
+          style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;border-radius:10px">
+          <source src="video-equipo.mp4" type="video/mp4">
+        </video>
+        <div style="position:absolute;inset:0;background:rgba(0,0,0,0.25);border-radius:10px"></div>
+        <div class="exp-badge" style="z-index:2">+10<small>AÑOS</small></div>
       </div>
     </div>
   </div>
